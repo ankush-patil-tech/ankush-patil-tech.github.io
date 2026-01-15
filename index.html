@@ -1,54 +1,182 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Ankush Patil | Data Engineer</title>
-    <style>
-        body {
-            font-family: Arial;
-            background: #0f172a;
-            color: white;
-            text-align: center;
-            padding: 50px;
-        }
-        h1 { color: #38bdf8; }
-        .card {
-            background: #1e293b;
-            padding: 20px;
-            margin: 20px auto;
-            width: 60%;
-            border-radius: 10px;
-        }
-        a {
-            color: #38bdf8;
-            text-decoration: none;
-        }
-    </style>
+<meta charset="UTF-8" />
+<title>Ankush Patil | Data Engineer</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Inter', sans-serif; }
+
+body {
+  background: radial-gradient(circle at top, #020617, #020617);
+  color: white;
+  overflow-x: hidden;
+}
+
+/* NAV */
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 20px 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  backdrop-filter: blur(12px);
+  background: rgba(2,6,23,0.8);
+  z-index: 100;
+}
+nav h2 { color: #38bdf8; }
+nav a { color: #cbd5f5; margin-left: 30px; text-decoration: none; }
+
+/* HERO */
+.hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 100px 20px;
+}
+.hero h1 {
+  font-size: 4rem;
+  background: linear-gradient(90deg,#38bdf8,#22d3ee);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+.hero p {
+  margin-top: 20px;
+  font-size: 1.2rem;
+  color: #cbd5f5;
+}
+.hero .btn {
+  margin-top: 40px;
+  padding: 14px 32px;
+  border-radius: 30px;
+  background: linear-gradient(90deg,#38bdf8,#22d3ee);
+  border: none;
+  color: black;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+/* SECTIONS */
+section {
+  max-width: 1200px;
+  margin: auto;
+  padding: 100px 20px;
+}
+.section-title {
+  font-size: 2.5rem;
+  color: #38bdf8;
+  margin-bottom: 60px;
+  text-align: center;
+}
+
+/* CARDS */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(280px,1fr));
+  gap: 30px;
+}
+.card {
+  background: linear-gradient(160deg,#020617,#0f172a);
+  border-radius: 20px;
+  padding: 30px;
+  box-shadow: 0 0 40px rgba(56,189,248,0.15);
+  transition: 0.4s;
+}
+.card:hover {
+  transform: translateY(-12px);
+  box-shadow: 0 0 70px rgba(56,189,248,0.35);
+}
+.card h3 { color: #38bdf8; margin-bottom: 15px; }
+.card p { color: #cbd5f5; line-height: 1.6; }
+
+/* FOOTER */
+footer {
+  padding: 60px;
+  text-align: center;
+  color: #94a3b8;
+}
+</style>
 </head>
+
 <body>
 
+<nav>
+  <h2>Ankush</h2>
+  <div>
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </div>
+</nav>
+
+<div class="hero">
+  <div>
     <h1>Ankush Patil</h1>
-    <h3>Data Engineer | Python | SQL | Cloud | ETL</h3>
+    <p>Data Engineer • AI Systems • Cloud • Financial Analytics</p>
+    <button class="btn" onclick="location.href='#projects'">View My Work</button>
+  </div>
+</div>
+
+<section id="about">
+  <h2 class="section-title">About Me</h2>
+  <div class="card">
+    <p>
+    I am a Data Engineer focused on building scalable pipelines, cloud-based analytics systems,
+    and AI-driven platforms like <b>ZeroRiskTrader</b>. My work connects real-time financial data,
+    machine learning, and decision-support systems.
+    </p>
+  </div>
+</section>
+
+<section id="projects">
+  <h2 class="section-title">Projects</h2>
+  <div class="grid">
 
     <div class="card">
-        <h2>About Me</h2>
-        <p>
-        I am a Data Engineer specializing in building scalable data pipelines,
-        analytics systems, and AI-powered platforms like ZeroRiskTrader.
-        </p>
+      <h3>ZeroRiskTrader</h3>
+      <p>
+      AI-powered paper trading platform combining live stock prices, financial news, and
+      ML predictions to guide trading decisions.
+      </p>
     </div>
 
     <div class="card">
-        <h2>Projects</h2>
-        <p><a href="#">ZeroRiskTrader – AI Paper Trading Platform</a></p>
-        <p><a href="#">Stock Data ETL Pipeline</a></p>
-        <p><a href="#">Real-Time Market Streaming</a></p>
+      <h3>Stock Market Data Pipeline</h3>
+      <p>
+      End-to-end ETL system collecting stock data via APIs, processing it with Python & SQL,
+      and storing it for analytics and dashboards.
+      </p>
     </div>
 
     <div class="card">
-        <h2>Contact</h2>
-        <p>GitHub: <a href="https://github.com/ankushp1650">github.com/ankushp1650</a></p>
-        <p>LinkedIn: Add later</p>
+      <h3>Real-Time Streaming Engine</h3>
+      <p>
+      Kafka and Spark based system that ingests and processes live financial market data
+      in real time for instant insights.
+      </p>
     </div>
+
+  </div>
+</section>
+
+<section id="contact">
+  <h2 class="section-title">Contact</h2>
+  <div class="card">
+    <p>GitHub: <a href="https://github.com/ankush-patil-tech" style="color:#38bdf8;">github.com/ankush-patil-tech</a></p>
+    <p style="margin-top:15px;">LinkedIn: Coming soon</p>
+  </div>
+</section>
+
+<footer>
+  © 2026 Ankush Patil — Data Engineer Portfolio
+</footer>
 
 </body>
 </html>

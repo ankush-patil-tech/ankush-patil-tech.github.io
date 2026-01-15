@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8" />
+<meta charset="UTF-8">
 <title>Ankush Patil | Data Engineer</title>
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
 
@@ -13,7 +13,6 @@
 body {
   background: radial-gradient(circle at top, #020617, #020617);
   color: white;
-  overflow-x: hidden;
 }
 
 /* NAV */
@@ -96,6 +95,26 @@ section {
 .card h3 { color: #38bdf8; margin-bottom: 15px; }
 .card p { color: #cbd5f5; line-height: 1.6; }
 
+/* SKILLS */
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 30px;
+}
+.skill-card {
+  background: linear-gradient(160deg,#020617,#0f172a);
+  padding: 30px;
+  border-radius: 18px;
+  box-shadow: 0 0 40px rgba(56,189,248,0.15);
+  transition: 0.4s;
+}
+.skill-card:hover {
+  transform: translateY(-10px) scale(1.02);
+  box-shadow: 0 0 70px rgba(56,189,248,0.35);
+}
+.skill-card h3 { color: #38bdf8; margin-bottom: 12px; }
+.skill-card p { color: #cbd5f5; line-height: 1.6; }
+
 /* FOOTER */
 footer {
   padding: 60px;
@@ -111,6 +130,7 @@ footer {
   <h2>Ankush</h2>
   <div>
     <a href="#about">About</a>
+    <a href="#skills">Skills</a>
     <a href="#projects">Projects</a>
     <a href="#contact">Contact</a>
   </div>
@@ -129,48 +149,36 @@ footer {
   <div class="card">
     <p>
     I am a Data Engineer focused on building scalable pipelines, cloud-based analytics systems,
-    and AI-driven platforms like <b>ZeroRiskTrader</b>. My work connects real-time financial data,
-    machine learning, and decision-support systems.
+    and AI-driven platforms like <b>ZeroRiskTrader</b>.
     </p>
+  </div>
+</section>
+
+<section id="skills">
+  <h2 class="section-title">Skills & Expertise</h2>
+  <div class="skills-grid">
+    <div class="skill-card"><h3>Data Engineering</h3><p>ETL & ELT pipelines, Airflow orchestration, API ingestion, batch and real-time processing.</p></div>
+    <div class="skill-card"><h3>Python & SQL</h3><p>Pandas, NumPy, analytics workflows, data cleaning, feature engineering.</p></div>
+    <div class="skill-card"><h3>Databases</h3><p>PostgreSQL, MySQL, data modeling and warehouse design.</p></div>
+    <div class="skill-card"><h3>Streaming</h3><p>Kafka and Spark for real-time financial data pipelines.</p></div>
+    <div class="skill-card"><h3>Cloud</h3><p>AWS, GCP, Docker, Git, CI/CD pipelines.</p></div>
+    <div class="skill-card"><h3>AI & Finance</h3><p>Stock prediction, sentiment analysis, and trading systems.</p></div>
   </div>
 </section>
 
 <section id="projects">
   <h2 class="section-title">Projects</h2>
   <div class="grid">
-
-    <div class="card">
-      <h3>ZeroRiskTrader</h3>
-      <p>
-      AI-powered paper trading platform combining live stock prices, financial news, and
-      ML predictions to guide trading decisions.
-      </p>
-    </div>
-
-    <div class="card">
-      <h3>Stock Market Data Pipeline</h3>
-      <p>
-      End-to-end ETL system collecting stock data via APIs, processing it with Python & SQL,
-      and storing it for analytics and dashboards.
-      </p>
-    </div>
-
-    <div class="card">
-      <h3>Real-Time Streaming Engine</h3>
-      <p>
-      Kafka and Spark based system that ingests and processes live financial market data
-      in real time for instant insights.
-      </p>
-    </div>
-
+    <div class="card"><h3>ZeroRiskTrader</h3><p>AI-powered stock trading simulator with ML and real-time data.</p></div>
+    <div class="card"><h3>Stock ETL Pipeline</h3><p>Automated data ingestion, transformation and storage.</p></div>
+    <div class="card"><h3>Market Streaming</h3><p>Kafka & Spark pipeline for real-time financial data.</p></div>
   </div>
 </section>
 
 <section id="contact">
   <h2 class="section-title">Contact</h2>
   <div class="card">
-    <p>GitHub: <a href="https://github.com/ankush-patil-tech" style="color:#38bdf8;">github.com/ankush-patil-tech</a></p>
-    <p style="margin-top:15px;">LinkedIn: Coming soon</p>
+    <p>GitHub: <a style="color:#38bdf8;" href="https://github.com/ankush-patil-tech">ankush-patil-tech</a></p>
   </div>
 </section>
 

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 <meta charset="UTF-8">
 <title>Ankush Patil | Data Engineer</title>
@@ -8,62 +9,197 @@
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
 
 <style>
-* {margin:0;padding:0;box-sizing:border-box;font-family:'Inter',sans-serif;}
 
-body {background:#020617;color:#e5e7eb;}
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Inter',sans-serif;}
 
-/* NAV */
-nav{
-position:fixed;top:0;width:100%;padding:20px 60px;
-display:flex;justify-content:space-between;align-items:center;
-background:rgba(2,6,23,0.9);backdrop-filter:blur(10px);z-index:100;
+body{
+background:#020617;
+color:#e5e7eb;
+line-height:1.6;
 }
-nav h2{color:#38bdf8;}
-nav a{color:#cbd5f5;margin-left:25px;text-decoration:none;}
+
+/* NAVBAR */
+
+nav{
+position:fixed;
+top:0;
+width:100%;
+padding:20px 60px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+background:rgba(2,6,23,0.9);
+backdrop-filter:blur(10px);
+z-index:100;
+}
+
+nav h2{
+color:#38bdf8;
+}
+
+nav a{
+color:#cbd5f5;
+margin-left:25px;
+text-decoration:none;
+font-weight:500;
+}
+
+nav a:hover{
+color:#38bdf8;
+}
 
 /* HERO */
+
 .hero{
-min-height:100vh;display:flex;align-items:center;justify-content:center;
-text-align:center;padding:120px 20px;
+min-height:100vh;
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
+padding:120px 20px;
 }
+
 .hero h1{
 font-size:4rem;
 background:linear-gradient(90deg,#38bdf8,#22d3ee);
--webkit-background-clip:text;color:transparent;
+-webkit-background-clip:text;
+color:transparent;
 }
-.hero p{margin-top:20px;font-size:1.2rem;color:#cbd5f5;}
+
+.hero p{
+margin-top:20px;
+font-size:1.2rem;
+color:#cbd5f5;
+}
+
+.hero-buttons{
+margin-top:30px;
+}
+
+.btn{
+padding:12px 24px;
+border-radius:8px;
+text-decoration:none;
+margin:10px;
+display:inline-block;
+}
+
+.btn-primary{
+background:#38bdf8;
+color:#020617;
+}
+
+.btn-outline{
+border:1px solid #38bdf8;
+color:#38bdf8;
+}
 
 /* SECTION */
-section{max-width:1200px;margin:auto;padding:100px 20px;}
-.section-title{font-size:2.4rem;color:#38bdf8;margin-bottom:50px;text-align:center;}
+
+section{
+max-width:1200px;
+margin:auto;
+padding:100px 20px;
+}
+
+.section-title{
+font-size:2.4rem;
+color:#38bdf8;
+margin-bottom:50px;
+text-align:center;
+}
+
+/* CARDS */
 
 .card{
 background:linear-gradient(160deg,#020617,#0f172a);
-border-radius:20px;padding:30px;
+border-radius:20px;
+padding:30px;
 box-shadow:0 0 40px rgba(56,189,248,0.15);
 }
 
+/* GRID */
+
 .grid{
-display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
 gap:30px;
 }
 
+/* SKILL */
+
 .skill-card{
 background:linear-gradient(160deg,#020617,#0f172a);
-padding:28px;border-radius:18px;
+padding:28px;
+border-radius:18px;
 box-shadow:0 0 35px rgba(56,189,248,0.15);
 transition:.3s;
 }
-.skill-card:hover{transform:translateY(-8px);box-shadow:0 0 60px rgba(56,189,248,0.35);}
-.skill-card h3{color:#38bdf8;margin-bottom:10px;}
+
+.skill-card:hover{
+transform:translateY(-8px);
+box-shadow:0 0 60px rgba(56,189,248,0.35);
+}
+
+.skill-card h3{
+color:#38bdf8;
+margin-bottom:10px;
+}
+
+/* PROJECT */
+
+.project-card{
+background:linear-gradient(160deg,#020617,#0f172a);
+padding:30px;
+border-radius:20px;
+box-shadow:0 0 40px rgba(56,189,248,0.15);
+}
+
+.project-card h3{
+color:#38bdf8;
+margin-bottom:15px;
+}
+
+/* EXPERIENCE */
+
+.timeline{
+border-left:2px solid #38bdf8;
+padding-left:20px;
+}
+
+.timeline-item{
+margin-bottom:30px;
+}
+
+.timeline-item h4{
+color:#38bdf8;
+}
+
+/* ARCH */
 
 .arch img{
-width:100%;max-width:900px;border-radius:16px;
+width:100%;
+max-width:900px;
+border-radius:16px;
 box-shadow:0 0 50px rgba(56,189,248,0.25);
 margin-top:30px;
 }
 
-footer{text-align:center;padding:60px;color:#94a3b8;}
+/* CONTACT */
+
+.contact a{
+color:#38bdf8;
+text-decoration:none;
+}
+
+/* FOOTER */
+
+footer{
+text-align:center;
+padding:60px;
+color:#94a3b8;
+}
+
 </style>
 </head>
 
@@ -71,77 +207,228 @@ footer{text-align:center;padding:60px;color:#94a3b8;}
 
 <nav>
 <h2>Ankush</h2>
+
 <div>
 <a href="#about">About</a>
 <a href="#skills">Skills</a>
-<a href="#project">Project</a>
+<a href="#projects">Projects</a>
+<a href="#experience">Experience</a>
 <a href="#contact">Contact</a>
 </div>
+
 </nav>
 
+
+<!-- HERO -->
+
 <div class="hero">
+
 <div>
+
 <h1>Ankush Patil</h1>
-<p>Data Engineer • AI Systems • Financial Data • Cloud</p>
+
+<p>Data Engineer • AI Systems • Financial Data Platforms</p>
+
+<div class="hero-buttons">
+
+<a class="btn btn-primary" href="#projects">View Projects</a>
+
+<a class="btn btn-outline" href="#">Download Resume</a>
+
 </div>
+
 </div>
+
+</div>
+
+
+<!-- ABOUT -->
 
 <section id="about">
+
 <h2 class="section-title">About Me</h2>
+
 <div class="card">
+
 <p>
-I am a Data Engineer focused on building end-to-end data pipelines, analytics platforms,
-and AI-driven financial systems. I am currently developing <b>ZeroRiskTrader</b>, a real-world
-paper trading and stock analytics platform.
+
+I am a Data Engineer specializing in building scalable data pipelines, financial analytics systems, and AI-driven platforms.
+
+My work focuses on transforming raw data into real-time insights through cloud infrastructure, machine learning models, and distributed data systems.
+
+Currently I am developing <b>ZeroRiskTrader</b>, a full-stack trading analytics platform integrating market APIs, machine learning prediction models, and portfolio analytics.
+
 </p>
+
 </div>
+
 </section>
+
+
+<!-- SKILLS -->
 
 <section id="skills">
-<h2 class="section-title">Skills & Expertise</h2>
+
+<h2 class="section-title">Tech Stack</h2>
+
 <div class="grid">
-<div class="skill-card"><h3>Data Engineering</h3><p>ETL pipelines, API ingestion, batch processing.</p></div>
-<div class="skill-card"><h3>Python & SQL</h3><p>Pandas, NumPy, analytics workflows.</p></div>
-<div class="skill-card"><h3>Databases</h3><p>PostgreSQL, MySQL, data modeling.</p></div>
-<div class="skill-card"><h3>Streaming</h3><p>Kafka & real-time market data.</p></div>
-<div class="skill-card"><h3>Cloud & DevOps</h3><p>Docker, Git, CI/CD, AWS/GCP concepts.</p></div>
-<div class="skill-card"><h3>AI & Finance</h3><p>Stock prediction, sentiment analysis.</p></div>
+
+<div class="skill-card">
+<h3>Data Engineering</h3>
+<p>ETL pipelines, data ingestion, batch processing.</p>
 </div>
+
+<div class="skill-card">
+<h3>Python</h3>
+<p>Pandas, NumPy, data analysis pipelines.</p>
+</div>
+
+<div class="skill-card">
+<h3>Databases</h3>
+<p>PostgreSQL, MySQL, schema design.</p>
+</div>
+
+<div class="skill-card">
+<h3>Streaming</h3>
+<p>Kafka, real-time event processing.</p>
+</div>
+
+<div class="skill-card">
+<h3>Machine Learning</h3>
+<p>Time-series forecasting, sentiment analysis.</p>
+</div>
+
+<div class="skill-card">
+<h3>Cloud</h3>
+<p>AWS concepts, Docker containers.</p>
+</div>
+
+</div>
+
 </section>
 
-<section id="project">
-<h2 class="section-title">ZeroRiskTrader – Data Platform</h2>
 
-<div class="card">
+<!-- PROJECTS -->
+
+<section id="projects">
+
+<h2 class="section-title">Projects</h2>
+
+<div class="grid">
+
+<div class="project-card">
+
+<h3>ZeroRiskTrader</h3>
+
 <p>
-ZeroRiskTrader is an AI-powered stock trading simulator that integrates live market data,
-machine learning models, and portfolio analytics into a unified data engineering platform.
+
+AI-powered paper trading platform with real-time stock data, ML prediction models, and portfolio analytics dashboard.
+
 </p>
+
 </div>
 
-<div class="grid" style="margin-top:50px;">
-<div class="skill-card"><h3>Stock APIs</h3><p>Live & historical stock prices.</p></div>
-<div class="skill-card"><h3>Python Data Pipelines</h3><p>Collection, cleaning & transformation.</p></div>
-<div class="skill-card"><h3>SQL Database</h3><p>Stores prices, trades & portfolios.</p></div>
-<div class="skill-card"><h3>ML Models</h3><p>Time-series forecasting & prediction.</p></div>
-<div class="skill-card"><h3>Paper Trading Engine</h3><p>Buy/Sell simulation & PnL tracking.</p></div>
-<div class="skill-card"><h3>Web Dashboard</h3><p>User interface & analytics.</p></div>
+
+<div class="project-card">
+
+<h3>Sentiment Stock Predictor</h3>
+
+<p>
+
+Machine learning system analyzing financial news and tweets to predict stock price movements using NLP.
+
+</p>
+
 </div>
 
-<div class="arch">
-<h3 style="color:#38bdf8;text-align:center;margin-top:60px;">System Architecture</h3>
-<img src="architecture.png" alt="ZeroRiskTrader Architecture">
+
+<div class="project-card">
+
+<h3>Financial Data Pipeline</h3>
+
+<p>
+
+Automated pipeline collecting stock market data from APIs and storing structured datasets for analytics.
+
+</p>
+
 </div>
+
+</div>
+
 </section>
+
+
+<!-- EXPERIENCE -->
+
+<section id="experience">
+
+<h2 class="section-title">Experience</h2>
+
+<div class="timeline">
+
+<div class="timeline-item">
+
+<h4>Tata Consultancy Services</h4>
+
+<p>Software Engineer</p>
+
+</div>
+
+<div class="timeline-item">
+
+<h4>Independent Projects</h4>
+
+<p>AI trading systems and financial data engineering platforms.</p>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- ARCHITECTURE -->
+
+<section>
+
+<h2 class="section-title">System Architecture</h2>
+
+<div class="arch" style="text-align:center;">
+
+<img src="architecture.png">
+
+</div>
+
+</section>
+
+
+<!-- CONTACT -->
 
 <section id="contact">
+
 <h2 class="section-title">Contact</h2>
-<div class="card">
-<p>GitHub: <a style="color:#38bdf8;" href="https://github.com/ankush-patil-tech">ankush-patil-tech</a></p>
+
+<div class="card contact">
+
+<p>Email: ankush@email.com</p>
+
+<p>GitHub:
+<a href="https://github.com/ankush-patil-tech">ankush-patil-tech</a>
+</p>
+
+<p>LinkedIn: Add your profile</p>
+
 </div>
+
 </section>
 
-<footer>© 2026 Ankush Patil — Data Engineering Portfolio</footer>
+
+<footer>
+
+© 2026 Ankush Patil — Data Engineering Portfolio
+
+</footer>
 
 </body>
 </html>
